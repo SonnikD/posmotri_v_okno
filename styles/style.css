@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: 0 auto;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Fira Sans Condensed", Arial, Helvetica, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
@@ -74,6 +74,7 @@ ol {
 }
 
 .search-form__label {
+  align-items: center;
   width: fit-content;
   cursor: pointer;
   display: flex;
@@ -107,7 +108,7 @@ ol {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   color: rgba(255, 255, 255, 0.7);
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", Arial, Helvetica, sans-serif;
   font-size: 18px;
   min-width: 225px;
 }
@@ -160,7 +161,7 @@ ol {
   font-weight: 700;
   line-height: 94%;
   text-transform: uppercase;
-  font-family: "Oswald";
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
 }
 
 .content__accent {
@@ -199,6 +200,10 @@ ol {
   background-color: #545050;
 }
 
+.content__card-link:active {
+  background-color: #545050;
+}
+
 .content__card-link:focus {
   outline: none;
 }
@@ -217,25 +222,29 @@ ol {
 }
 
 .content__video-card-title {
-  font-family: "Oswald";
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
   font-weight: 700;
   padding: 2px 2px 6px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .content__video-card-description {
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", Arial, Helvetica, sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 90%;
   padding: 0 0 2px 2px;
 }
 .content__video-card-thumbnail {
-  width: 194px;
+  min-width: 194px;
   height: 103px;
   object-fit: cover;
+  object-position: center;
 }
 
 .result {
@@ -253,6 +262,7 @@ ol {
   width: inherit;
   height: inherit;
   object-fit: cover;
+  object-position: center;
 }
 
 .button {
@@ -262,7 +272,7 @@ ol {
   text-align: center;
   font-weight: 700;
   font-size: 18px;
-  font-family: "Fira Sans Condensed";
+  font-family: "Fira Sans Condensed", Arial, Helvetica, sans-serif;
   color: #fff;
   background-color: transparent;
   border: 1px solid #fff;
