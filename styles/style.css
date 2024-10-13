@@ -89,9 +89,8 @@ ol {
   outline: none;
 }
 
-.search-form__label:has(:focus-visible) .search-form__textfield {
-  outline: 1px solid #fff;
-  outline-offset: 3px;
+.search-form__label:hover .search-form__label-text {
+  text-decoration: underline;
 }
 
 .search-form__fieldset-title {
@@ -231,6 +230,7 @@ ol {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  max-width: 200px;
 }
 
 .content__video-card-description {
